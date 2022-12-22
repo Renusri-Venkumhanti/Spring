@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <context:component-scan base-package="com.spring.assignment"/>
+   <bean name = "test1" class = "com.spring.assignment.Assignment3.Test" p:testId="T01" p:testTitle="Core Java Test" p:testMarks = "80"/>
+   <bean name = "test2" class = "com.spring.assignment.Assignment3.Test" p:testId="T02" p:testTitle="Spring Test" p:testMarks = "90"/>
+   <bean name = "student1" class = "com.spring.assignment.Assignment3.Student" p:studentId= "S001" p:studentName = "Steve"/>
+   <bean name = "student2" class = "com.spring.assignment.Assignment3.Student" p:studentId= "S002" p:studentName = "Lovisa"/>
+</beans>
